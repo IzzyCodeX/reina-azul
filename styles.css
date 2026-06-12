@@ -69,23 +69,36 @@ img {
 }
 
 .brand {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 12px;
-  font-weight: 800;
-  letter-spacing: 0;
+  gap: 16px;     
+  text-decoration: none;
 
 }
 
 .brand-mark {
-  width: 34px;
-  height: 34px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--blue);
-  color: white;
-  font-size: 15px;
+  height: 60px; 
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+.brand-marks{
+  height: 40px; 
+  width: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+.logo-text {
+  font-size: 1.4rem;
+  margin-left: -16px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+.logo-texts{
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
 }
 
 .nav-links {
