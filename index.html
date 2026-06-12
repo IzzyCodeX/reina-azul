@@ -9,45 +9,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <script src="script.js"></script>
-    <header class="site-header">
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="index.html" aria-label="Reina Azul home">
-          <span class="brand-mark">RA</span>
-          <span>Reina Azul</span>
-        </a>
-        <div class="nav-links">
-          <a class="active" href="index.html">Home</a>
-          <a href="community.html">Blue Family</a>
-          <a href="contact.html">Contact</a>
-          <a href="https://www.instagram.com/_reinaazul/" target="_blank" rel="noreferrer">Instagram</a>
-        </div>
-      </nav>
-    </header>
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="Reina Azul home">
+      <span class="brand-mark">RA</span>
+      <span>Reina Azul</span>
+    </a>
+    
+    <button class="hamburger-menu" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <div class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="community.html">Blue Family</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.instagram.com/_reinaazul/" target="_blank" rel="noreferrer">Instagram</a>
+    </div>
+  </nav>
+</header>
 
     <main>
-      <section class="hero">
-        <div class="wrap hero-grid">
-          <div>
-            <p class="eyebrow">Lifestyle creator · Spoken word artist</p>
-            <h1>Reina Azul</h1>
-            <p class="lead">An award-winning spoken word artist, storyteller, content creator, and personal development advocate creating with a mic, a message, and a commitment to intentional growth.</p>
-            <div class="hero-actions">
-              <a class="button primary" href="contact.html">Work With Reina</a>
-              <a class="button secondary" href="community.html">Explore Blue Family</a>
-              <a class="button secondary" href="https://open.spotify.com/show/22lv5XPXW0oE5tBdYrOItC" target="_blank" rel="noreferrer">Listen to Reina Speaks</a>
-            </div>
-          </div>
-          <div class="portrait-shell">
-            <img class="portrait" src="assets/reina-azul-profile.png" alt="Portrait of Reina Azul in a blue dress">
-            <div class="stat-row" aria-label="Instagram profile statistics from supplied screenshot">
-              <div class="stat"><strong>624</strong><span>posts</span></div>
-              <div class="stat"><strong>505</strong><span>followers</span></div>
-              <div class="stat"><strong>52</strong><span>following</span></div>
-            </div>
-          </div>
-        </div>
-      </section>
+<section class="hero">
+  <div class="wrap hero-grid">
+    
+    <div class="hero-text-block">
+      <p class="eyebrow">Lifestyle Creator · Spoken Word Artist</p>
+      <h1>Reina Azul</h1>
+      <p class="lead">An award-winning spoken word artist, storyteller, content creator, and personal development advocate creating with a mic, a message, and a commitment to intentional growth.</p>
+    </div>
+
+    <div class="portrait-shell">
+      <div class="portrait-container">
+        <img class="portrait" src="assets/reina-azul-profile.png" alt="Reina Azul">
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a class="button primary" href="contact.html">Work With Reina</a>
+      <a class="button secondary" href="community.html">Explore Blue Family</a>
+      <a class="button secondary" href="https://open.spotify.com/show/22lv5XPXW0oE5tBdYrOItC" target="_blank" rel="noreferrer">Listen to Reina Speaks</a>
+    </div>
+
+  </div>
+</section>
 
       <section class="section">
         <div class="wrap split">
@@ -116,8 +123,17 @@
     <footer class="footer">
       <div class="wrap footer-inner">
         <span>© 2026 Reina Azul. All rights reserved.</span>
-        <a href="mailto:workwithreinaazul@gmail.com">workwithreinaazul@gmail.com</a>
+        <a href="mailto:reinaazul@gmail.com?subject=Inquiry%20from%20Website" target="_blank" rel="noreferrer">workwithreinaazul@gmail.com</a>
       </div>
     </footer>
+    <script>
+const mobileBtn = document.querySelector('.hamburger-menu');
+const navigationPanel = document.querySelector('.nav-links');
+
+mobileBtn.addEventListener('click', () => {
+  navigationPanel.classList.toggle('open');
+  mobileBtn.classList.toggle('active');
+});
+    </script>
   </body>
 </html>

@@ -15,17 +15,22 @@
           <span class="brand-mark">RA</span>
           <span>Reina Azul</span>
         </a>
+    <button class="hamburger-menu" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
         <div class="nav-links">
           <a href="index.html">Home</a>
           <a href="community.html">Blue Family</a>
           <a class="active" href="contact.html">Contact</a>
-          <a href="mailto:workwithreinaazul@gmail.com">Email</a>
+
         </div>
       </nav>
     </header>
     <script src="script.js"></script>
     <main>
-      <section class="page-hero">
+      <section class="page-heros">
         <div class="wrap">
           <p class="eyebrow">Bookings · Collaborations · Partnerships</p>
           <h1>Work With Reina</h1>
@@ -68,8 +73,7 @@
             <a class="pill light" href="https://www.facebook.com/profile.php?id=61558437058179" target="_blank" rel="noreferrer">Facebook</a>
             <a class="pill light" href="https://www.threads.net/@_reinaazul" target="_blank" rel="noreferrer">Threads</a>
             <a class="pill light" href="https://www.youtube.com/@reina_azul129" target="_blank" rel="noreferrer">YouTube</a>
-            <a class="pill light" href="https://open.spotify.com/show/22lv5XPXW0oE5tBdYrOItC" target="_blank" rel="noreferrer" id="hola">Spotify </a>
-            <button class="pill light"  target="_blank" rel="noreferrer">Spotify</button>
+            <a class="pill light" href="https://open.spotify.com/show/22lv5XPXW0oE5tBdYrOItC" target="_blank" rel="noreferrer" id="hola">Spotify Podcasts</a>
           </div>
         </div>
       </section>
@@ -78,8 +82,17 @@
     <footer class="footer">
       <div class="wrap footer-inner">
         <span>© 2026 Reina Azul.</span>
-        <a href="mailto:workwithreinaazul@gmail.com">workwithreinaazul@gmail.com</a>
+        <a href="mailto:reinaazul@gmail.com?subject=Inquiry%20from%20Website" target="_blank" rel="noreferrer">workwithreinaazul@gmail.com</a>
       </div>
     </footer>
+    <script>
+const mobileBtn = document.querySelector('.hamburger-menu');
+const navigationPanel = document.querySelector('.nav-links');
+
+mobileBtn.addEventListener('click', () => {
+  navigationPanel.classList.toggle('open');
+  mobileBtn.classList.toggle('active');
+});
+    </script>
   </body>
 </html>

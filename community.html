@@ -16,6 +16,11 @@
           <span class="brand-mark">RA</span>
           <span>Reina Azul</span>
         </a>
+      <button class="hamburger-menu" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
         <div class="nav-links">
           <a href="index.html">Home</a>
           <a class="active" href="community.html">Blue Family</a>
@@ -102,5 +107,14 @@
         <a href="https://oyedokunm.substack.com" target="_blank" rel="noreferrer">Read more on Substack</a>
       </div>
     </footer>
+    <script>
+const mobileBtn = document.querySelector('.hamburger-menu');
+const navigationPanel = document.querySelector('.nav-links');
+
+mobileBtn.addEventListener('click', () => {
+  navigationPanel.classList.toggle('open');
+  mobileBtn.classList.toggle('active');
+});
+    </script>
   </body>
 </html>
