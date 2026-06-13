@@ -54,7 +54,7 @@ img {
   top: 0;
   z-index: 20;
   border-bottom: 1px solid rgba(16, 19, 27, .08);
-  background: rgba(251, 250, 246, .88);
+  background: #FFFFFF;
   backdrop-filter: blur(18px);
 }
 
