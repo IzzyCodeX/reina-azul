@@ -15,4 +15,6 @@ I used HTML and CSS with a touch of javascript for the hamburger on mobile respo
 
 Hosted with vercel
 
-I used Gemini during development as a programming buddy. It helped me bounce design ideas around, figure out the exact syntax needed to URL-encode the blank spaces for my pre-filled WhatsApp link templates, and quickly troubleshoot minor CSS padding bugs. The actual code organization, asset design, copy, and deployment strategy were entirely executed by me.
+I used Gemini during development as an assistant. It helped me bounce design ideas around,quickly troubleshoot minor CSS padding bugs. The actual code organization, asset design, copy, and deployment strategy were entirely executed by me.
+
+I contributed all the initial HTML/CSS content, branding decisions, asset organization, ongoing customization and bug fixes after the AI-generated base, GitHub setup, and Vercel deployment.
