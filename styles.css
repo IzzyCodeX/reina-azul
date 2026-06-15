@@ -650,7 +650,7 @@ max-width: 650px;
 
 @media (max-width: 768px) {
   .site-header {
-    position: sticky;
+    position: relative;
     z-index: 1000;
     background-color: #ffffff;
   }
